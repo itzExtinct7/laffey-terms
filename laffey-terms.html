@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laffey Music — Terms of Service</title>
+<meta name="description" content="Terms of Service for Laffey Music, operated by mr extinct codes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#10131d; --bg-card:#151929; --border:#262b3d; --border-soft:#1d2232;
+    --text:#d8dbe6; --text-dim:#aeb3c6; --text-mute:#7b8099; --text-faint:#6d7390;
+    --heading:#f3f4fa; --accent:#5b6ef0; --link:#9fb4ff; --link-hover:#c3d1ff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif}
+  a{color:var(--link)}
+  a:hover{color:var(--link-hover)}
+  ::selection{background:#394469;color:var(--heading)}
+
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(91,110,240,.45)}50%{box-shadow:0 0 0 8px rgba(91,110,240,0)}}
+  @keyframes drift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+  .reveal{opacity:0}
+  .reveal.visible{animation:fadeUp .7s cubic-bezier(.16,.84,.44,1) forwards}
+  .mark{animation:glow 2.8s ease-in-out infinite}
+  .hr{background:linear-gradient(90deg,var(--accent),var(--link),var(--accent));background-size:200% 100%;animation:drift 6s ease-in-out infinite}
+  .navlink{position:relative;text-decoration:none;transition:color .2s ease}
+  .navlink::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--link);transition:width .25s ease}
+  .navlink:hover::after{width:100%}
+  .card{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+  .card:hover{transform:translateY(-3px);border-color:#394469;box-shadow:0 12px 28px rgba(0,0,0,.35)}
+  @media (prefers-reduced-motion:reduce){.reveal,.mark,.hr{animation:none;opacity:1}}
+
+  .wrap{width:100%;max-width:1280px;margin:0 auto;padding:56px 24px 80px}
+  @media(min-width:720px){.wrap{padding:72px 64px 96px}}
+  .topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-bottom:28px;border-bottom:1px solid var(--border)}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo-mark{width:34px;height:34px;border-radius:9px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;font-size:18px;color:var(--heading)}
+  .logo-name{font-weight:600;font-size:16px;color:var(--heading)}
+  .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-faint)}
+  .hero{padding:48px 0 44px;max-width:760px}
+  h1{font-family:'Fraunces',serif;font-weight:600;font-size:40px;line-height:1.1;margin:0 0 20px;color:var(--heading)}
+  @media(min-width:720px){h1{font-size:52px}}
+  .lede{font-size:18px;line-height:1.6;color:var(--text-dim);margin:0 0 20px}
+  .meta{font-size:13px;color:var(--text-mute);margin:0}
+  .links-row{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px;font-size:13px}
+  .dot{color:#3a3f54}
+  .layout{display:grid;grid-template-columns:1fr;gap:40px;align-items:start}
+  @media(min-width:900px){.layout{grid-template-columns:260px 1fr;gap:56px}}
+  nav{position:sticky;top:24px;border:1px solid var(--border);border-radius:14px;padding:20px 22px;background:var(--bg-card)}
+  nav .label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-faint);margin-bottom:12px}
+  nav ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;font-size:13.5px;line-height:1.4}
+  nav a{color:var(--text-dim)}
+  main{max-width:760px}
+  section{padding-bottom:36px;margin-bottom:36px;border-bottom:1px solid var(--border-soft)}
+  section:last-child{border-bottom:none}
+  .num{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-faint);margin-bottom:8px}
+  h2{font-size:22px;font-weight:600;color:var(--heading);margin:0 0 14px}
+  p{font-size:15px;line-height:1.75;color:var(--text-dim);margin:0 0 14px}
+  p:last-child{margin-bottom:0}
+  ul{margin:0 0 14px;padding-left:20px;font-size:15px;line-height:1.75;color:var(--text-dim);display:flex;flex-direction:column;gap:6px}
+  code{background:var(--border-soft);padding:1px 6px;border-radius:5px;font-size:13.5px}
+  .contact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:22px 26px;display:flex;flex-direction:column;gap:6px}
+  .contact-card .k{font-size:13px;color:var(--text-mute)}
+  .contact-card .v{font-size:15px;color:#e3e5ee;margin-bottom:6px}
+  footer{margin-top:56px;padding-top:28px;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--text-faint)}
+  footer .fl{display:flex;gap:16px}
+  footer a{color:var(--text-faint);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar reveal">
+    <div class="logo">
+      <div class="logo-mark mark">L</div>
+      <span class="logo-name">Laffey Music</span>
+    </div>
+    <div class="eyebrow">Service rules &amp; responsibilities</div>
+  </div>
+
+  <div class="hero reveal" style="animation-delay:.08s">
+    <h1>Terms of Service</h1>
+    <div class="hr" style="width:64px;height:3px;border-radius:2px;margin:0 0 20px"></div>
+    <p class="lede">The rules for using Laffey, requesting music, and contacting the operator for help.</p>
+    <p class="meta">Effective and last updated: 19 October 2026 · Operator: mr extinct codes</p>
+    <div class="links-row">
+      <a href="#" class="navlink">Privacy Policy</a><span class="dot">·</span>
+      <a href="#" class="navlink">Terms of Service</a><span class="dot">·</span>
+      <a href="#" class="navlink">Support</a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <nav class="reveal card" style="animation-delay:.14s">
+      <div class="label">On this page</div>
+      <ol>
+        <li><a href="#s1" class="navlink">1. Operator and acceptance</a></li>
+        <li><a href="#s2" class="navlink">2. Eligibility and server authority</a></li>
+        <li><a href="#s3" class="navlink">3. What the service provides</a></li>
+        <li><a href="#s4" class="navlink">4. Free service and future paid features</a></li>
+        <li><a href="#s5" class="navlink">5. Acceptable use</a></li>
+        <li><a href="#s6" class="navlink">6. Music and intellectual property</a></li>
+        <li><a href="#s7" class="navlink">7. Discord and hosted music providers</a></li>
+        <li><a href="#s8" class="navlink">8. Privacy and information requests</a></li>
+        <li><a href="#s9" class="navlink">9. Availability, queues and support</a></li>
+        <li><a href="#s10" class="navlink">10. Limits, suspension and appeals</a></li>
+        <li><a href="#s11" class="navlink">11. Ending use and discontinuation</a></li>
+        <li><a href="#s12" class="navlink">12. Warranties and mandatory rights</a></li>
+        <li><a href="#s13" class="navlink">13. Liability</a></li>
+        <li><a href="#s14" class="navlink">14. Changes to these Terms</a></li>
+        <li><a href="#s15" class="navlink">15. Applicable law and disputes</a></li>
+        <li><a href="#s16" class="navlink">16. Contact and reports</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="s1" class="reveal">
+        <div class="num">1</div>
+        <h2>Operator and acceptance</h2>
+        <p>Laffey Music ("Laffey", "the bot" or "the service") is operated by <strong style="color:#e3e5ee">mr extinct codes</strong> ("we", "us" or "our"). These Terms govern your use of Laffey. Please read them and the Privacy Policy before using the bot. By using Laffey, you agree to these Terms to the extent a valid agreement can be formed under applicable law. If you do not agree, do not use the bot. Installing it does not authorize an administrator to waive another person's legal rights.</p>
+        <p>These Terms are between you and the operator, not Discord. They do not replace or override Discord's Terms of Service, Community Guidelines, or other applicable platform terms.</p>
+      </section>
+
+      <section id="s2" class="reveal">
+        <div class="num">2</div>
+        <h2>Eligibility and server authority</h2>
+        <p>You must meet Discord's minimum age and any higher minimum age required in your country. The service is not directed at children under 13. If you cannot legally agree to these Terms by yourself, obtain any parent or guardian agreement required by applicable law.</p>
+        <p>You may install or configure Laffey in a server only if you have the necessary authority. Server administrators remain responsible for their own permissions, DJ roles, command restrictions and use of the bot. Do not give the bot unnecessary permissions or represent yourself as an authorized owner when you are not.</p>
+      </section>
+
+      <section id="s3" class="reveal">
+        <div class="num">3</div>
+        <h2>What the service provides</h2>
+        <p>Laffey provides Discord music commands, hosted music search and playback, playlists, queues, favourites, playback controls, server preferences and operational information. Some controls require the relevant DJ, server-management, requester or bot-owner permissions. The bot may enforce queue limits, per-user limits, track-duration restrictions, cooldowns, voice-channel requirements, skip votes and maintenance restrictions.</p>
+        <p>Supported sources currently include eligible YouTube, SoundCloud and Bandcamp links, subject to the configured hosted node's capabilities. A source being accepted by the bot does not guarantee that a particular track or playlist is available or permitted for your intended use. Features and configured limits can change.</p>
+      </section>
+
+      <section id="s4" class="reveal">
+        <div class="num">4</div>
+        <h2>Free service and future paid features</h2>
+        <p>The reviewed Laffey v2.2 implementation contains no paid subscriptions, checkout or billing feature. Access to the bot is currently provided without a bot subscription fee. You remain responsible for your own internet, Discord or third-party charges, if any.</p>
+        <p>If optional paid features are introduced, their price and separate purchase/cancellation terms must be disclosed before purchase, with any necessary agreement and platform compliance. These Terms do not authorize an undisclosed charge or guarantee that every future feature will remain free.</p>
+      </section>
+
+      <section id="s5" class="reveal">
+        <div class="num">5</div>
+        <h2>Acceptable use</h2>
+        <p>Use the bot lawfully, respect server rules and the rights of other people, and follow applicable Discord and content-provider terms. In particular, do not:</p>
+        <ul>
+          <li>Use music, links or requests to infringe copyright, privacy or other rights, or distribute unlawful material.</li>
+          <li>Harass users, submit abusive content, deliberately disrupt voice channels or spam commands and playlists.</li>
+          <li>Evade blocks, cooldowns, vote rules, permission checks, service limits or Discord enforcement.</li>
+          <li>Attempt unauthorized access to another user's records, operator controls, hosting files, tokens or service infrastructure.</li>
+          <li>Exploit vulnerabilities, overload the bot or its hosted providers, or conduct disruptive security testing without authorization.</li>
+          <li>Impersonate the operator or Discord, solicit credentials through the bot, or use the service for fraud or deceptive activity.</li>
+        </ul>
+        <p>Report suspected vulnerabilities privately through the support contact. Do not publish credentials or other users' personal information in a report.</p>
+      </section>
+
+      <section id="s6" class="reveal">
+        <div class="num">6</div>
+        <h2>Music and intellectual property</h2>
+        <p>You are responsible for ensuring that your requests and playback comply with applicable law and the rights and terms associated with the content. Being able to play a track does not establish permission to reproduce, redistribute, publicly perform, download or commercially exploit it. Laffey does not grant a music licence or permission to bypass access controls or digital-rights restrictions.</p>
+        <p>Music, artwork, names and other third-party material remain subject to their owners' rights. Requests to play content do not transfer ownership of that content to the operator. Rights holders may report a specific concern through the support server, identifying the content or URL, the relevant right and enough information to investigate. Do not include unnecessary personal information or publish a complaint containing private details in public channels.</p>
+      </section>
+
+      <section id="s7" class="reveal">
+        <div class="num">7</div>
+        <h2>Discord and hosted music providers</h2>
+        <p>Laffey relies on Discord, its bot host, a third-party hosted Lavalink provider and upstream music services. The configured music provider in the reviewed version is Serenetia. These services may impose their own rules, limits and technical requirements. Their availability, catalogue, policies and logging practices are not controlled by Laffey's code.</p>
+        <p>Provider failures, source restrictions, rate limits, network issues, hosting limits or Discord changes may interrupt search, command registration or audio playback. We cannot guarantee access to a particular provider or track. Laffey is an independent application and is not operated, endorsed or verified by Discord merely because these Terms are published.</p>
+      </section>
+
+      <section id="s8" class="reveal">
+        <div class="num">8</div>
+        <h2>Privacy and information requests</h2>
+        <p>The Privacy Policy explains the information processed for commands, queues, favourites, permissions, diagnostics, safety and music playback, including sharing with the hosted audio provider. Public bot messages can expose track details and requester mentions; avoid submitting sensitive information.</p>
+        <p>Saved data can remain after a restart or removal of the bot. Removing a favourite or using <code>/stop</code> is not complete erasure of every related record or backup. You can request access, correction or deletion through the privacy contact in the policy. Using the service does not waive privacy rights or replace consent where consent is legally required.</p>
+      </section>
+
+      <section id="s9" class="reveal">
+        <div class="num">9</div>
+        <h2>Availability, queues and support</h2>
+        <p>We aim to maintain a useful service, but do not promise continuous availability, uninterrupted audio, a response time, permanent compatibility or an error-free service. Maintenance, recovery, retries and automatic process restarts may interrupt sessions.</p>
+        <p>Queues, favourites, settings and counters may be saved, but they are not a guaranteed backup or permanent archive. After a restart or saved disconnect, restoring a queue can require <code>/resumequeue</code>. Keep your own copy of playlists that you need to retain. Operational support is available through the support server without a guaranteed service-level agreement.</p>
+      </section>
+
+      <section id="s10" class="reveal">
+        <div class="num">10</div>
+        <h2>Limits, suspension and appeals</h2>
+        <p>We may restrict commands, disconnect a player, enable maintenance, block a user or server, or remove the bot from a server where reasonably necessary for misuse prevention, security, legal/platform compliance or service operation. Server administrators may also restrict the bot's use in their server.</p>
+        <p>If you believe a restriction was applied in error, contact the operator through the support server and explain the issue. We will consider relevant information, but cannot promise reinstatement where access would create a security, legal or platform-compliance problem.</p>
+      </section>
+
+      <section id="s11" class="reveal">
+        <div class="num">11</div>
+        <h2>Ending use and discontinuation</h2>
+        <p>You may stop using Laffey at any time. Authorized administrators can remove the bot from their server. We may modify or discontinue features or the service, with reasonable notice where feasible and where required by law.</p>
+        <p>Removal or discontinuation does not itself prove that all saved data has been erased. Provisions that necessarily continue after use ends, such as rights concerning prior misuse or applicable liability limitations, continue only to the extent permitted by law.</p>
+      </section>
+
+      <section id="s12" class="reveal">
+        <div class="num">12</div>
+        <h2>Warranties and mandatory rights</h2>
+        <p>To the extent permitted by applicable law, the service is provided "as is" and "as available", without additional warranties about availability, accuracy, suitability, reliability, data preservation or non-interruption.</p>
+        <p>This wording does not exclude guarantees, remedies or duties that cannot lawfully be excluded. It does not excuse the operator from applicable privacy, security or other legal obligations.</p>
+      </section>
+
+      <section id="s13" class="reveal">
+        <div class="num">13</div>
+        <h2>Liability</h2>
+        <p>To the extent permitted by applicable law, the operator is not liable for indirect or consequential losses arising from service interruptions, unavailable third-party content or loss of saved music information.</p>
+        <p>Nothing in these Terms excludes or limits liability that cannot lawfully be excluded or limited, or removes mandatory consumer rights. No fixed liability cap, mandatory arbitration requirement or exclusive court location is imposed by these Terms.</p>
+      </section>
+
+      <section id="s14" class="reveal">
+        <div class="num">14</div>
+        <h2>Changes to these Terms</h2>
+        <p>We may revise these Terms when the service, legal requirements or operating practices change. The updated version and date will be published on this page.</p>
+        <p>Changes do not retroactively remove accrued rights. If you do not agree to revised Terms, stop using the service; any remaining information requests can still be made through the privacy contact.</p>
+      </section>
+
+      <section id="s15" class="reveal">
+        <div class="num">15</div>
+        <h2>Applicable law and disputes</h2>
+        <p>Applicable mandatory law governs your rights and the enforceability of these Terms. Please contact the operator first if you want to try to resolve a service concern informally; doing so does not remove your right to pursue remedies available under applicable law or complain to a competent authority.</p>
+        <p>If any provision cannot lawfully be enforced, it applies only to the extent permitted, and the remaining provisions continue where legally possible.</p>
+      </section>
+
+      <section id="s16" class="reveal">
+        <div class="num">16</div>
+        <h2>Contact and reports</h2>
+        <p>Contact the operator for service questions, abuse reports, restriction appeals, rights complaints and security concerns. Use a private ticket or private contact route for personal information, privacy requests or vulnerabilities. Never send account passwords or login tokens.</p>
+        <div class="contact-card card">
+          <div class="k">Operator</div>
+          <div class="v">mr extinct codes</div>
+          <div class="k">Support server</div>
+          <a href="https://discord.gg/g8vGfgsA6f" class="navlink">discord.gg/g8vGfgsA6f</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="reveal">
+    <span>Laffey Music is an independent Discord application, not operated by Discord.</span>
+    <div class="fl">
+      <a href="#" class="navlink">Privacy Policy</a>
+      <a href="#" class="navlink">Terms of Service</a>
+      <a href="#" class="navlink">Support</a>
+    </div>
+  </footer>
+
+</div>
+<script>
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(function(el){ el.classList.add('visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>
